@@ -110,7 +110,7 @@
           </td>
         </tr>
         <tr>
-          <td> BIG: </td>
+          <td> BIC: </td>
           <td>
             <input type="text"/>
           </td>
