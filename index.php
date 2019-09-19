@@ -5,6 +5,7 @@ $html = file_get_contents('start.html');
 
 if(isset($_POST['btn'])){
 	$html = str_replace('{success}',"button erfolgreich gedrueckt",$html);
+	
 } else {
 	$html = str_replace('{success}',json_encode($_POST),$html);
 }
