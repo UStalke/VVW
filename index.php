@@ -73,6 +73,11 @@
         </td>
       </tr>
       <tr>
+        <td> Handy: </td>
+        <td>
+          <input type="text"/>
+        </td>
+      <tr>
         <td> E-mail: </td>
         <td>
           <input type="text"/>
@@ -91,7 +96,24 @@
           </select><br/>
 
         </td>
-      </tr>
+        <tr>
+          <td> Bank: </td>
+          <td>
+            <input type="text"/>
+          </td>
+          </tr>
+        </tr>
+        <tr>
+          <td> IBAN: </td>
+          <td>
+            <input type="text"/>
+          </td>
+        </tr>
+        <tr>
+          <td> BIG: </td>
+          <td>
+            <input type="text"/>
+          </td>
       <tr>
         <td colspan="2">
           <button name="btn" value="send"> absenden </button>
