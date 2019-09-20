@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using VVW_1.Seiten;
+using System.Windows.Threading;
 
 
 namespace VVW_1.Fenster
@@ -26,7 +27,8 @@ namespace VVW_1.Fenster
             InitializeComponent();
             frmSeiten.Source = new Uri("/Seiten/PersonenDaten.xaml", UriKind.RelativeOrAbsolute);
             Globales.GlobalClass._SeitenNr = 1;
-
+            _Aktualisieren();
+                
         }
 
         private void BtnVor_Click(object sender, RoutedEventArgs e)
@@ -75,9 +77,19 @@ namespace VVW_1.Fenster
                     Globales.GlobalClass._SeitenNr = 1;
                     btnVorgaenger.IsEnabled = false;
                     break;
-
+                
             }
-
+        }
+        DispatcherTimer _t = new DispatcherTimer();
+        public void _Aktualisieren()
+        {
+            _t.Interval = new TimeSpan(60000);
+            _t.Tick += t_Tick;
+            _t.Start();
+        }
+        public void t_Tick(object sender, EventArgs e)
+        {
+            lblNameMitgl.Content = "Erfasst wird: " + Globales.GlobalClass._Vname + " " + Globales.GlobalClass._Nname;
         }
     }
 }
