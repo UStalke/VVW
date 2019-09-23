@@ -14,18 +14,18 @@ namespace VVW_1.Datenbank
          
         Datenbank.SqlVerbindung _CO = new SqlVerbindung();
         
-            public DataTable _ContVonPause()
-            {
-            //MySqlCommand _Cmd = new MySqlCommand();
-            //_Cmd.Connection = _CO._Verbindung();
-            //_Cmd.CommandText = "gp_Sel_Anrede";
-            //_Cmd.CommandType = CommandType.StoredProcedure;
-            MySqlDataAdapter _DA = new MySqlDataAdapter("gp_Sel_Anrede", _CO._Verbindung());
-           // _DA.SelectCommand = _Cmd;
-             DataTable _DT = new DataTable();
-            _DA.Fill(_DT);
-            return _DT;
-             }
+           // public DataTable _ContVonPause()
+           // {
+           // //MySqlCommand _Cmd = new MySqlCommand();
+           // //_Cmd.Connection = _CO._Verbindung();
+           // //_Cmd.CommandText = "gp_Sel_Anrede";
+           // //_Cmd.CommandType = CommandType.StoredProcedure;
+           // MySqlDataAdapter _DA = new MySqlDataAdapter("gp_Sel_Anrede", _CO._Verbindung());
+           //// _DA.SelectCommand = _Cmd;
+           //  DataTable _DT = new DataTable();
+           // _DA.Fill(_DT);
+           // return _DT;
+           //  }
 
         public DataTable _Anrede()
         {
