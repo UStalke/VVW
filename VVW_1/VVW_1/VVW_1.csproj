@@ -100,6 +100,9 @@
     <Compile Include="Seiten\PersonenSparten.xaml.cs">
       <DependentUpon>PersonenSparten.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Seiten\Test.xaml.cs">
+      <DependentUpon>Test.xaml</DependentUpon>
+    </Compile>
     <Page Include="Fenster\Anmeldung.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -137,6 +140,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Seiten\PersonenSparten.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Seiten\Test.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
