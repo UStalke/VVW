@@ -34,7 +34,7 @@ namespace VVW_1.Fenster
         private void BtnVor_Click(object sender, RoutedEventArgs e)
         {
             Datenbank.SqlLesen _DBL = new Datenbank.SqlLesen();
-            _DBL._ContVonPause();
+            //_DBL._ContVonPause();
 
             switch (Globales.GlobalClass._SeitenNr)
             {
