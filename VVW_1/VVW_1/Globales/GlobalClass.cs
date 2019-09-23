@@ -16,6 +16,7 @@ namespace VVW_1.Globales
         private static string _hnr;
         private static string _plz;
         private static string _ort;
+        private static string _email;
         private static string _tel;
         private static string _mobil;
         private static int _anrede;
@@ -34,5 +35,6 @@ namespace VVW_1.Globales
         public static int _Geschl { get => _geschl; set => _geschl = value; }
         public static int _Titel { get => _titel; set => _titel = value; }
         public static int _Anrede { get => _anrede; set => _anrede = value; }
+        public static string _Email { get => _email; set => _email = value; }
     }
 }
