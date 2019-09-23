@@ -74,3 +74,5 @@ C:\Users\Platz 1500\Documents\GitHub\VVW\VVW_1\VVW_1\obj\Debug\VVW_1.csproj.Core
 C:\Users\Platz 1500\Documents\GitHub\VVW\VVW_1\VVW_1\obj\Debug\VVW_1.csproj.CopyComplete
 C:\Users\Platz 1500\Documents\GitHub\VVW\VVW_1\VVW_1\obj\Debug\VVW_1.exe
 C:\Users\Platz 1500\Documents\GitHub\VVW\VVW_1\VVW_1\obj\Debug\VVW_1.pdb
+C:\Users\Platz 1500\Documents\GitHub\VVW\VVW_1\VVW_1\obj\Debug\Seiten\Test.g.cs
+C:\Users\Platz 1500\Documents\GitHub\VVW\VVW_1\VVW_1\obj\Debug\Seiten\Test.baml
