@@ -16,6 +16,23 @@
             <!--<Setter Property="Foreground" Value="{DynamicResource Schriftfarbe}" />-->
             <Setter Property="Background" Value="{DynamicResource Schriftfarbe}" />
         </Style>
+        <Style x:Key="FrameButtonStyl" TargetType="{x:Type Button}">
+            <Setter Property="OverridesDefaultStyle" Value="True" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Grid>
+                            <Ellipse x:Name="Ellipse"
+                   StrokeThickness="1"
+                   Width="36"
+                   Height="36">
+
+                            </Ellipse>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
     </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>
@@ -53,7 +70,7 @@
 
         </StackPanel>
         
-        <Frame Name="frmSeiten" Grid.Row="1" Grid.Column="0" Margin="3" NavigationUIVisibility="Hidden"></Frame>
+        <Frame Name="frmSeiten" Grid.Row="1" Grid.Column="0" Margin="3" NavigationUIVisibility="Visible"></Frame>
         
         <StackPanel Grid.Row="2" Grid.Column="0" Orientation="Horizontal" Name="spFoot" Margin="3"
                     HorizontalAlignment="Right" VerticalAlignment="Center">
