@@ -28,6 +28,7 @@
             <Setter Property="VerticalContentAlignment" Value="Center" />
             <Setter Property="Margin" Value="4"/>
         </Style>
+        
     </Page.Resources>
     <Grid>
         <Grid.ColumnDefinitions>
