@@ -31,11 +31,13 @@ namespace VVW_1.Fenster
                 
         }
 
+
         private void BtnVor_Click(object sender, RoutedEventArgs e)
         {
+          
             Datenbank.SqlLesen _DBL = new Datenbank.SqlLesen();
             //_DBL._ContVonPause();
-
+            
             switch (Globales.GlobalClass._SeitenNr)
             {
                 case 1:
@@ -60,6 +62,8 @@ namespace VVW_1.Fenster
 
         private void BtnVorgaenger_Click(object sender, RoutedEventArgs e)
         {
+          
+
             switch (Globales.GlobalClass._SeitenNr)
             {
                 case 4:
