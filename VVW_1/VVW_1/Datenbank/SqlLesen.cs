@@ -51,5 +51,13 @@ namespace VVW_1.Datenbank
             return _DT;
         }
 
+        public DataTable _Sparten()
+        {
+            SqlDataAdapter _DA = new SqlDataAdapter("gp_Sel_Sparten", _CO._MsSqlVer());
+            DataTable _DT = new DataTable();
+            _DA.Fill(_DT);
+            return _DT;
+        }
+
     }
 }
