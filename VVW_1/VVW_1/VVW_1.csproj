@@ -88,6 +88,7 @@
       <DependentUpon>Master.xaml</DependentUpon>
     </Compile>
     <Compile Include="Globales\GlobalClass.cs" />
+    <Compile Include="Globales\Sparten\GClassSparten.cs" />
     <Compile Include="Seiten\PersonenAnsicht.xaml.cs">
       <DependentUpon>PersonenAnsicht.xaml</DependentUpon>
     </Compile>
