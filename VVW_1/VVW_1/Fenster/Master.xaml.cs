@@ -81,8 +81,9 @@ namespace VVW_1.Fenster
                     Globales.GlobalClass._SeitenNr = 1;
                     btnVorgaenger.IsEnabled = false;
                     break;
-                
             }
+           
+            MessageBox.Show(Globales.Sparten.GClassSparten.ChkSparten);
         }
         DispatcherTimer _t = new DispatcherTimer();
         public void _Aktualisieren()
