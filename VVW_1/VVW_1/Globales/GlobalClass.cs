@@ -20,8 +20,11 @@ namespace VVW_1.Globales
         private static string _tel;
         private static string _mobil;
         private static int _anrede;
+        private static int _anrindexcbo;
         private static int _titel;
+        private static int _titelindexcbo;
         private static int _geschl;
+        private static int _geschlindexcbo;
         
         public static int _SeitenNr { get => _seiten_nr; set => _seiten_nr = value; }
         public static string _Vname { get => _vname; set => _vname = value; }
@@ -36,5 +39,8 @@ namespace VVW_1.Globales
         public static int _Titel { get => _titel; set => _titel = value; }
         public static int _Anrede { get => _anrede; set => _anrede = value; }
         public static string _Email { get => _email; set => _email = value; }
+        public static int _Anrindexcbo { get => _anrindexcbo; set => _anrindexcbo = value; }
+        public static int _Titelindexcbo { get => _titelindexcbo; set => _titelindexcbo = value; }
+        public static int _Geschlindexcbo { get => _geschlindexcbo; set => _geschlindexcbo = value; }
     }
 }

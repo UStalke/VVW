@@ -34,18 +34,18 @@ namespace VVW_1.Seiten
             cboanr.ItemsSource =  _DBL._Anrede().DefaultView;
             cboanr.DisplayMemberPath = _DBL._Anrede().Columns[1].ToString();
             cboanr.SelectedValuePath = _DBL._Anrede().Columns[0].ToString();
-            if (Globales.GlobalClass._Anrede > 0) { cboanr.SelectedIndex = Globales.GlobalClass._Anrede - 1; } else { cboanr.SelectedIndex = 0; }
+            if (Globales.GlobalClass._Anrede > 0) { cboanr.SelectedIndex = Globales.GlobalClass._Anrindexcbo; } else { cboanr.SelectedIndex = 0; }
 
             cbogeschl.ItemsSource = _DBL._Geschlecht().DefaultView;
             cbogeschl.DisplayMemberPath = _DBL._Geschlecht().Columns[1].ToString();
             cbogeschl.SelectedValuePath = _DBL._Geschlecht().Columns[0].ToString();
-            if (Globales.GlobalClass._Geschl > 0) { cbogeschl.SelectedIndex = Globales.GlobalClass._Geschl - 1; } else { cbogeschl.SelectedIndex = 0; }
+            if (Globales.GlobalClass._Geschl > 0) { cbogeschl.SelectedIndex = Globales.GlobalClass._Geschlindexcbo; } else { cbogeschl.SelectedIndex = 0; }
             
 
             cbotil.ItemsSource = _DBL._Titel().DefaultView;
             cbotil.DisplayMemberPath = _DBL._Titel().Columns[1].ToString();
             cbotil.SelectedValuePath = _DBL._Titel().Columns[0].ToString();
-            if (Globales.GlobalClass._Titel > 0) { cbotil.SelectedIndex = Globales.GlobalClass._Titel - 1; } else { cbotil.SelectedIndex = 0; }
+            if (Globales.GlobalClass._Titel > 0) { cbotil.SelectedIndex = Globales.GlobalClass._Titelindexcbo; } else { cbotil.SelectedIndex = 0; }
             txtvname.Text = Globales.GlobalClass._Vname;
             txtnname.Text = Globales.GlobalClass._Nname;
             txtstrasse.Text = Globales.GlobalClass._Strasse;
@@ -61,6 +61,7 @@ namespace VVW_1.Seiten
         private void _ChangedInGlobalClassCBO(object sender, SelectionChangedEventArgs e)
         {
             if (cboanr.SelectedIndex >= 0) { Globales.GlobalClass._Anrede = Convert.ToInt16(cboanr.SelectedValue.ToString()); }
+            Globales.GlobalClass._Anrindexcbo = cboanr.SelectedIndex;
             if (cbotil.SelectedIndex >= 0 ){Globales.GlobalClass._Titel = Convert.ToInt16(cbotil.SelectedValue.ToString());}
             if (cbogeschl.SelectedIndex >= 0) { Globales.GlobalClass._Geschl = Convert.ToInt16(cbogeschl.SelectedValue.ToString()); }
         }
