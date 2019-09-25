@@ -20,9 +20,11 @@
             <RowDefinition Height="6*"/>
             <RowDefinition Height="19*"/>
         </Grid.RowDefinitions>
-        <StackPanel Orientation="Horizontal" Margin="10,5,0,5" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Left" Width="51">
-            <Label>Sparten</Label>
-            <WrapPanel Orientation="Horizontal" Name="wpCheckBoxenSparten"></WrapPanel>
-        </StackPanel>
+       
+            
+            <WrapPanel Orientation="Horizontal" Grid.Row="0" Grid.Column="0" Name="wpCheckBoxenSparten" MinWidth="300">
+            <Label>Sparten:</Label>
+            </WrapPanel>
+        
     </Grid>
 </Page>
