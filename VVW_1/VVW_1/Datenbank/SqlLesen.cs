@@ -58,6 +58,22 @@ namespace VVW_1.Datenbank
             _DA.Fill(_DT);
             return _DT;
         }
+        public DataTable _ChkSparten()
+        {
+            SqlDataAdapter _DA = new SqlDataAdapter("gp_Sel_ChkSparten @guid", _CO._MsSqlVer());
+            _DA.SelectCommand.Parameters.AddWithValue("@guid", Globales.GlobalClass._Sessionid);
+            DataTable _DT = new DataTable();
+            _DA.Fill(_DT);
+            return _DT;
+        }
+
+        public DataTable _SpartenInaktiv()
+        {
+            SqlDataAdapter _DA = new SqlDataAdapter("gp_Sel_SpartenInaktiv", _CO._MsSqlVer());
+            DataTable _DT = new DataTable();
+            _DA.Fill(_DT);
+            return _DT;
+        }
 
     }
 }
