@@ -32,7 +32,8 @@ namespace VVW_1.Fenster
 
         private void btnMitgliedNeu_Click(object sender, RoutedEventArgs e)
         {
-
+            Fenster.Master _WM = new Master();
+            _WM.Show();
         }
     }
 }
