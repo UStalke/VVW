@@ -25,6 +25,7 @@ namespace VVW_1.Globales
         private static int _titelindexcbo;
         private static int _geschl;
         private static int _geschlindexcbo;
+        private static string _sessionid;
         
         public static int _SeitenNr { get => _seiten_nr; set => _seiten_nr = value; }
         public static string _Vname { get => _vname; set => _vname = value; }
@@ -42,5 +43,6 @@ namespace VVW_1.Globales
         public static int _Anrindexcbo { get => _anrindexcbo; set => _anrindexcbo = value; }
         public static int _Titelindexcbo { get => _titelindexcbo; set => _titelindexcbo = value; }
         public static int _Geschlindexcbo { get => _geschlindexcbo; set => _geschlindexcbo = value; }
+        public static string _Sessionid { get => _sessionid; set => _sessionid = value; }
     }
 }
