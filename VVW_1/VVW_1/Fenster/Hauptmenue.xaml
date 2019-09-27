@@ -5,8 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:VVW_1.Fenster"
         mc:Ignorable="d"
-        Title="Hauptmenue" Height="768" Width="1280">
+        Title="Hauptmenue" Height="768" Width="1280" WindowStartupLocation="CenterScreen">
     <Grid>
-        
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+        <Button x:Name="btnKonfSparten" Click="btnKonfSparten_Click" Height="30" Width="100" >Sparten anlegen</Button>
+        <Button x:Name="btnMitgliedNeu" Click="btnMitgliedNeu_Click" Height="30" Width="100" >Mitglied neu</Button>
+        </StackPanel>
     </Grid>
 </Window>
