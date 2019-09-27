@@ -23,5 +23,16 @@ namespace VVW_1.Fenster
         {
             InitializeComponent();
         }
+
+        private void btnKonfSparten_Click(object sender, RoutedEventArgs e)
+        {
+            Fenster.Backend.SpartenAktivieren _Spa = new Backend.SpartenAktivieren();
+            _Spa.ShowDialog();
+        }
+
+        private void btnMitgliedNeu_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
