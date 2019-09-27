@@ -27,6 +27,8 @@ namespace VVW_1.Fenster
             InitializeComponent();
             frmSeiten.Source = new Uri("/Seiten/PersonenDaten.xaml", UriKind.RelativeOrAbsolute);
             Globales.GlobalClass._SeitenNr = 1;
+            Globales.CreateGUID _CGuid = new Globales.CreateGUID();
+            _CGuid._GUID();
             _Aktualisieren();
                 
         }
@@ -83,7 +85,7 @@ namespace VVW_1.Fenster
                     break;
             }
            
-            MessageBox.Show(Globales.Sparten.GClassSparten.ChkSparten);
+            
         }
         DispatcherTimer _t = new DispatcherTimer();
         public void _Aktualisieren()
