@@ -10,7 +10,7 @@ namespace VVW_1.Datenbank
 {
     class SqlQuery
     {
-        public static string _SelAnrede = "SELECT * FROM tbl_Anrede";
+        
         Datenbank.SqlVerbindung _DBV = new SqlVerbindung();
         public SqlDataAdapter _Sparten()
         {
@@ -24,7 +24,6 @@ namespace VVW_1.Datenbank
             _DA.UpdateCommand = _CMD;
 
             return _DA;
-
         }
 
 
