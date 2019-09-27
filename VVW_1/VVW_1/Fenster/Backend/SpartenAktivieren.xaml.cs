@@ -28,15 +28,14 @@ namespace VVW_1.Fenster.Backend
             _FilldgSpartenAktiv();
         }
 
-        Datenbank.SqlVerbindung _CO = new Datenbank.SqlVerbindung();
+        //Datenbank.SqlVerbindung _CO = new Datenbank.SqlVerbindung();
         Datenbank.SqlQuery _DBQ = new Datenbank.SqlQuery();
-        Datenbank.SqlLesen _SL = new Datenbank.SqlLesen();
+       // Datenbank.SqlLesen _SL = new Datenbank.SqlLesen();
         SqlDataAdapter _DA;
         DataSet _DS ;
         
         private void _FilldgSparten()
         {
-                    
             _DS = new DataSet();
             _DBQ._Sparten().Fill(_DS);
             dgSpartenInaktive.ItemsSource = _DS.Tables[0].AsDataView();// _SL._SpartenInaktiv().DefaultView;
@@ -51,10 +50,10 @@ namespace VVW_1.Fenster.Backend
 
         private void _FilldgSpartenAktiv()
         {
-           SqlDataAdapter _DA1 = new SqlDataAdapter("gp_Sel_SpartenAktiv", _CO._MsSqlVer());
-            DataTable _DT1 = new DataTable();
-            _DA1.Fill(_DT1);
-            dgSpartenAktive.ItemsSource = _DT1.DefaultView;
+           //SqlDataAdapter _DA1 = new SqlDataAdapter("gp_Sel_SpartenAktiv", _CO._MsSqlVer());
+           // DataTable _DT1 = new DataTable();
+           // _DA1.Fill(_DT1);
+           // dgSpartenAktive.ItemsSource = _DT1.DefaultView;
         }
 
 
