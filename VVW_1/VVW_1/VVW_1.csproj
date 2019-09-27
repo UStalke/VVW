@@ -77,9 +77,13 @@
     </ApplicationDefinition>
     <Compile Include="Datenbank\SqlLesen.cs" />
     <Compile Include="Datenbank\SqlQuery.cs" />
+    <Compile Include="Datenbank\SqlSchreiben.cs" />
     <Compile Include="Datenbank\SqlVerbindung.cs" />
     <Compile Include="Fenster\Anmeldung.xaml.cs">
       <DependentUpon>Anmeldung.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Fenster\Backend\SpartenAktivieren.xaml.cs">
+      <DependentUpon>SpartenAktivieren.xaml</DependentUpon>
     </Compile>
     <Compile Include="Fenster\Hauptmenue.xaml.cs">
       <DependentUpon>Hauptmenue.xaml</DependentUpon>
@@ -87,8 +91,10 @@
     <Compile Include="Fenster\Master.xaml.cs">
       <DependentUpon>Master.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Globales\CreateGUID.cs" />
     <Compile Include="Globales\GlobalClass.cs" />
     <Compile Include="Globales\Sparten\GClassSparten.cs" />
+    <Compile Include="Globales\Sparten\TempGCS.cs" />
     <Compile Include="Seiten\PersonenAnsicht.xaml.cs">
       <DependentUpon>PersonenAnsicht.xaml</DependentUpon>
     </Compile>
@@ -105,6 +111,10 @@
       <DependentUpon>Test.xaml</DependentUpon>
     </Compile>
     <Page Include="Fenster\Anmeldung.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Fenster\Backend\SpartenAktivieren.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
