@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Platz 1500\Documents\GitHub\VVW\VVW_1\VVW_1\App.xaml
-9139977124
+10-1153967080
 
-191384549787
+231331721798
 25-633842368
-Fenster\Anmeldung.xaml;Fenster\Hauptmenue.xaml;Fenster\Master.xaml;MainWindow.xaml;Seiten\PersonenAnsicht.xaml;Seiten\PersonenBank.xaml;Seiten\PersonenDaten.xaml;Seiten\PersonenSparten.xaml;Seiten\Test.xaml;
+Fenster\Anmeldung.xaml;Fenster\Backend\SpartenAktivieren.xaml;Fenster\Hauptmenue.xaml;Fenster\Master.xaml;MainWindow.xaml;Seiten\PersonenAnsicht.xaml;Seiten\PersonenBank.xaml;Seiten\PersonenDaten.xaml;Seiten\PersonenSparten.xaml;Seiten\Test.xaml;
 
 True
 
