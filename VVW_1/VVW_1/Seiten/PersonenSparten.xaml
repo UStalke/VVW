@@ -24,6 +24,7 @@
             
             <WrapPanel Orientation="Horizontal" Grid.Row="0" Grid.Column="0" Name="wpCheckBoxenSparten" MinWidth="300">
             <Label>Sparten:</Label>
+                
             </WrapPanel>
         
     </Grid>
